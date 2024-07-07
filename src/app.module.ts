@@ -3,7 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { User } from './auth/user';
+import { User } from './models/user';
 import { MentorModule } from './domains/mentor/mentor.module';
 import { Mentor } from './models/mentor/mentor';
 import { Student } from './models/student/student';

@@ -1,4 +1,4 @@
-import { User } from 'src/auth/user';
+import { User } from 'src/models/user';
 import {
   Column,
   Entity,
@@ -18,16 +18,16 @@ export class Mentor {
   @Column()
   lastname: string;
 
-  @Column()
+  @Column({ nullable: true })
   imgUrl: string;
 
-  @Column()
+  @Column({ nullable: true })
   githubUrl: string;
 
-  @Column()
+  @Column({ nullable: true })
   linkedinUrl: string;
 
-  @Column()
+  @Column({ nullable: true })
   description: string;
 
   @OneToOne(() => User)
